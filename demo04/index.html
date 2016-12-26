@@ -7,7 +7,7 @@
   </head>
   <body>
     <div id="example"></div>
-    <script type="text/babel">
+    <!--<script type="text/babel">
       var HelloMessage = React.createClass({
         render: function() {
           return <h1>Hello {this.props.name}</h1>;
@@ -18,6 +18,18 @@
         <HelloMessage name="John" />,
         document.getElementById('example')
       );
-    </script>
+    </script>-->
+	<script type="text/babel">
+		var HelloMessage = React.createClass({
+			render: function () {
+				return <h1> Hello {this.props.name}</h1>;
+			}
+		});
+
+		ReactDOM.render(
+				<HelloMessage name="zzl81cn"/>,
+				document.getElementById('example')
+		)
+	</script>
   </body>
 </html>
